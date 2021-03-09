@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "floc-simhash"
+version = "0.1.0"
+description = "A fast python implementation of the SimHash algorithm"
+authors = ["Engineering <engineering@hybridtheory.com>"]
+exclude = ["tests/*"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/hybridtheory/floc-simhash"
+repository = "https://github.com/hybridtheory/floc-simhash"
+keywords = ["floc", "simhash"]
+include = [
+    "LICENSE",
+]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+scikit-learn = "^0.24.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+pytest-cov = "^2.11.1"
+hypothesis = "^6.3.4"
+pylint-fail-under = "^0.3.0"
+black = "^20.8b1"
+pytest-xdist = "^2.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

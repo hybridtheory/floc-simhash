@@ -1,0 +1,10 @@
+pre-commit:
+  commands:
+    black:
+      tags: python
+      glob: "*.py"
+      run: black --check {staged_files}
+    pylint:
+      tags: python
+      glob: "*.py"
+      run: pylint-fail-under --fail_under 8.0 {staged_files}
